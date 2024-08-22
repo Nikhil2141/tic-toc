@@ -1,0 +1,85 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+/* width: 100vh; */
+height: 100vh;
+background-image: url(./asstes/img.jpeg);
+background-size: cover;
+background-position: center;
+display: grid;
+place-items:center;
+
+}
+
+.game-info{
+    color: white;
+    position: absolute;
+    top:3rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color:rgba(52, 42, 42, 0.133);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    padding: 15px;
+
+
+}
+.tic-toc{
+    width: 90%;
+    max-width: 20rem;
+    background-color:rgba(52, 42, 42, 0.133);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio :1/1 ;
+    padding: 20px;
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.box1,.box2,.box4,.box5{
+    border-right: 5px solid  white;
+    border-bottom: 5px solid white;
+}
+.box7,.box8{
+    border-right: 5px solid white;
+}
+.box3,.box6{
+    border-bottom: 5px solid white;
+}
+.btn{
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgba(52, 42, 42, 0.133);
+border-radius: 1rem;
+border: 1px solid rgba(255, 255, 255, 0.25);
+padding: 15px;
+cursor: pointer;
+display: none;
+}
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: green;
+}
